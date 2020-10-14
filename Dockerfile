@@ -1,4 +1,4 @@
-FROM debian:stretch as builder
+FROM debian:buster as builder
 
 # install needed apps
 RUN echo 'mysql-server mysql-server/root_password password motdepasse' | debconf-set-selections && \
